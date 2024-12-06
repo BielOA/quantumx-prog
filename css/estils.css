@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav.menu-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu-horizontal ul li {
+    position: relative;
+    /*padding: 0 30px;*/
+    width: 33.333%;
+    background-color: #004080;
+}
+
+.primerel { 
+    border-radius: 10% 0 0 10%;
+}
+
+.ultimel { 
+    border-radius: 0 10% 10% 0;
+}
+
+nav.menu-horizontal ul li a,
+nav.menu-horizontal ul li p {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    margin: 0;
+}
+
+nav.menu-horizontal ul li p { 
+    cursor:default;
+}
+
+nav.menu-horizontal ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #004080;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    transition: all 1s;
+}
+
+nav.menu-horizontal ul li.primerel:hover { 
+    border-bottom-left-radius: 0;
+}
+
+nav.menu-horizontal ul li.ultimel:hover { 
+    border-bottom-right-radius: 0;
+}
+
+nav.menu-horizontal ul li:hover ul {
+    display: block;
+}
+
+nav.menu-horizontal ul li ul li {
+    transition: color 1s;
+    width: 100%;
+}
+nav.menu-horizontal ul li ul li:hover {
+    background-color: #7ca6d0;
+}
+nav.menu-horizontal ul li ul li a {
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main h1 {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: left;
+}
+.logo img {
+    height: 130px;
+}
+
+.formulari { 
+    background-color: #9fa1a2;
+    padding: 9px;
+}
+
+.header-item {
+    line-height: 7rem;
+}
+
+.logofont { 
+    font-family: initial;
+    font-weight: bold;
+}
+
+.articles ul li {
+    padding: 20px;
+}
+
+form .form-group {
+    margin: 10px 0;
+}
